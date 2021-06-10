@@ -6,7 +6,6 @@
   "homepage": "",
   "license": "ISC",
   "main": "src/index.ts",
-  
   "dependencies": {
     "@types/react": "^17.0.4",
     "dotenv": "^8.2.0",

@@ -4,14 +4,20 @@ const withImages = require("next-images");
 
 const { withSentryConfig } = require("@sentry/nextjs");
 
-const moduleExports = withPlugins([withTM(), withImages], {
-  webpack: (config) => {
-    // custom webpack config
-    return config;
-  },
-  images: {},
-});
-
 const SentryWebpackPluginOptions = {};
 
-module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);
+module.exports = withPlugins(
+  [
+    withTM(),
+    withImages,
+    (nextConfig) => withSentryConfig(nextConfig, SentryWebpackPluginOptions),
+  ],
+  {
+    webpack: (config) => {
+      // custom webpack config
+      return config;
+    },
+    distDir: "../../out",
+    images: {},
+  }
+);

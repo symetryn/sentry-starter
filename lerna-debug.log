@@ -1,0 +1,13 @@
+0 silly argv { _: [ 'bootstrap' ], lernaVersion: '3.22.1', '$0': 'lerna' }
+1 notice cli v3.22.1
+2 verbose rootPath /home/symetryn/Desktop/wesionary/sentry-starter
+3 error Error: Invalid package name "@shared": name can only contain URL-friendly characters
+3 error     at invalidPackageName (/home/symetryn/Desktop/wesionary/sentry-starter/node_modules/npm-package-arg/npa.js:86:15)
+3 error     at Result.setName (/home/symetryn/Desktop/wesionary/sentry-starter/node_modules/npm-package-arg/npa.js:121:11)
+3 error     at new Result (/home/symetryn/Desktop/wesionary/sentry-starter/node_modules/npm-package-arg/npa.js:111:23)
+3 error     at Function.resolve (/home/symetryn/Desktop/wesionary/sentry-starter/node_modules/npm-package-arg/npa.js:58:15)
+3 error     at /home/symetryn/Desktop/wesionary/sentry-starter/node_modules/@lerna/package-graph/index.js:61:30
+3 error     at Array.forEach (<anonymous>)
+3 error     at /home/symetryn/Desktop/wesionary/sentry-starter/node_modules/@lerna/package-graph/index.js:55:38
+3 error     at Map.forEach (<anonymous>)
+3 error     at new PackageGraph (/home/symetryn/Desktop/wesionary/sentry-starter/node_modules/@lerna/package-graph/index.js:44:10)
